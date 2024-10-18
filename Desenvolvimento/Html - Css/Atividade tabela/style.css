@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+    background-color: #1e1e1e;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(20, 112, 20, 0.842);
+    width: 15.6rem;
+    height: 100vh;
+    gap: 1rem;
+    top: 0;
+    left: 0;
+}
+
+section{
+    margin-left: 17rem;
+}
+
+.items h1{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: rgb(107, 223, 145);
+}
+
+img{
+    max-width: 6.25rem;
+    max-height: 6.25rem;
+}
+
+h2{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1.1rem ;
+}
+
+table{
+    border: rgb(0, 0, 0) solid 1px;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 99%;
+    margin-bottom: 1rem;
+}
+
+table td{
+    border: rgb(0, 0, 0) solid 1px;
+    padding: 8px;
+    background-color: rgb(224, 203, 162);
+}
+
+table th{
+    background-color:rgb(37, 138, 70);
+    padding: 8px;
+    border: rgb(0, 0, 0) solid 1px;
+}
+
+
+
+@media (max-width: 425px){
+    aside{
+        display: flex;
+        width: 26.5rem;
+        height: 25vh;
+        position: inherit;
+        gap: 5%;
+    }
+
+    section{
+        margin: 0;
+        padding: 1.5%;
+    }
+}
