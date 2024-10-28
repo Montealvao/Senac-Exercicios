@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #1e1e1e;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.array{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.array_itens{
+    color: white;
+    padding: 0.4rem;
+}
+
+form button{
+    padding: 0.6rem;
+    margin-left: 1rem;
+}
+
+form input{
+    padding: 0.6rem;
+}
