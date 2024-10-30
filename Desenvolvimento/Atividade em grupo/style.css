@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url();
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.H-left{
+    display: flex;
+    padding: 0.7rem;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 1.2rem;
+}
+
+.H-left h1{
+    font-size: 4rem;
+}
+
+.H-left img{
+    max-width: 10rem;
+}
+
+.H-right{
+    display: flex;
+    padding: 0.7rem;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.H-right a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.mid{
+    background-color: blue;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+
+}
+
+.mid h1{
+    font-size: 3.5rem;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.3rem;
+    gap: 2.8rem;
+}
+
+.activity1{
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+}
+
+.activity2{
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+}
+
+.activity3{
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.content3{
+    display: flex;
+    flex-direction: column;
+}
