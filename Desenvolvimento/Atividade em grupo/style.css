@@ -77,9 +77,9 @@ img{
     margin-right: 3rem;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
     max-height: 7rem;
-
+    border:  #383a3b 0.4rem solid;
+    border-radius: 1.5rem;
 }
 
 .mid h1{
@@ -90,6 +90,7 @@ img{
     display: flex;
     flex-direction: column;
     max-width: 50rem;
+    gap: 0.2rem;
 }
 
 #but{
@@ -112,16 +113,23 @@ section{
     flex-direction: column;
     margin-top: 3.3rem;
     gap: 2.8rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .activity{
     display: flex;
     gap: 1rem;
     padding-left: 1rem;
+    max-width: 60rem;
+    border:  #383a3b 0.4rem solid;
+    border-radius: 1.5rem;
 }
 
 .content{
     display: flex;
     flex-direction: column;
     color: rgb(61, 98, 122);
+    max-width: 60rem;
+    gap: 0.2rem;
 }
