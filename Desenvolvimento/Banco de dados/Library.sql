@@ -57,7 +57,7 @@ INSERT INTO Genres (GenreID, GenreName) VALUES
 
 select * from books;
 INSERT INTO Books (BookID, Title, AuthorID, GenreID, PublicationYear) VALUES
-('74a0ff62-63ab-449d-8446-5a34e4b62aaa', 'Harry Potter and the Sorcerer\'s Stone', 'fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1997),
+('74a0ff62-63ab-449d-8446-5a34e4b62aaa', 'Harry Potter and the Sorcerer\s Stone', 'fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1997),
 ('9a3d1f0d-214e-4693-a516-1e0b498a1340', 'A Game of Thrones', '8abec1b5-bb73-4e0d-be58-bb91d7a5da2c', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1996),
 ('3910deb5-12f6-4333-a10b-0a51eac32d5b', 'The Hobbit', '45c0fa42-23ef-48b9-bd1e-0fccfc65dd2b', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1937),
 ('cb95bc0b-2626-424c-bbd7-c5a3f01fc486', 'Harry Potter and the Chamber of Secrets', 'fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1998),
