@@ -17,8 +17,8 @@ header{
 }
 
 img{
-    max-width: 15.9rem;
-    max-height: 14rem;
+    max-width: 16.5rem;
+    max-height: 12.5rem;
 }
 
 .H-left{
@@ -114,37 +114,13 @@ section{
     gap: 2.8rem;
 }
 
-.activity1{
+.activity{
     display: flex;
     gap: 1rem;
     padding-left: 1rem;
 }
 
-.content1{
-    display: flex;
-    flex-direction: column;
-    color: rgb(61, 98, 122);
-}
-
-.activity2{
-    display: flex;
-    gap: 1rem;
-    padding-left: 1rem;
-}
-
-.content2{
-    display: flex;
-    flex-direction: column;
-    color: rgb(61, 98, 122);
-}
-
-.activity3{
-    display: flex;
-    gap: 1rem;
-    padding-left: 1rem;
-}
-
-.content3{
+.content{
     display: flex;
     flex-direction: column;
     color: rgb(61, 98, 122);
