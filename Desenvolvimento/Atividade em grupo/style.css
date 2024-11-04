@@ -4,6 +4,11 @@
     color: rgb(197, 196, 196);
 }
 
+@font-face {
+    font-family: Racoste;
+    src: url(.);
+}
+
 body{
     background-image: url(./dark-abstract-background.jpg);
     background-size: cover;
@@ -18,10 +23,8 @@ header{
 }
 
 img{
-    max-width: 16.5rem;
-    max-height: 12.5rem;
-    border-top-left-radius: 1.2rem;
-    border-bottom-left-radius: 1.2rem;
+    max-width: 19rem;
+    max-height: 15rem;
 }
 
 .H-left{
@@ -33,7 +36,7 @@ img{
 }
 
 .H-left h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: rgb(61, 98, 122);
 }
 
@@ -51,7 +54,7 @@ img{
 
 .H-right a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: rgb(61, 98, 122);
     position: relative;
 }
@@ -106,7 +109,8 @@ img{
     border: none;
     background-color: #385063;
     font-size: 1rem;
-    filter: drop-shadow( 0px 0px 5px red);
+    filter: drop-shadow( 0px 0px 5px #068595);
+    cursor: pointer;
 }
  
 #timer{
@@ -116,6 +120,7 @@ img{
 }
 
 section{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 3.3rem;
@@ -130,6 +135,36 @@ section{
     gap: 1rem;
     padding-left: rem;
     max-width: 60rem;
+    gap: 2.6rem;
+    margin: 5.2rem auto;
+    margin-top: 10rem;
+    background-color: black;
+    filter: drop-shadow( 0px 0px 5px #068595);
+    width: 90%;
+    padding-bottom: 2rem;
+    padding-top: 7rem;
+}
+
+section h1{
+    position: absolute;
+    top: -3rem;
+    right: 30rem;
+    font-size: 4rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(61, 98, 122);
+}
+
+
+.activity{
+    display: flex;
+    gap: 1rem;
+    width: 95rem;
+    height: 15rem;
     border-radius: 1.5rem;
     border: #383a3b 0.2rem solid;
     background-image: url(./dark-abstract-background.jpg);

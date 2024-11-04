@@ -29,21 +29,21 @@ window.onload = function(){
 }
 
 const botao = document.getElementById("but");
-botao.style.backgroundColor = "red"
+botao.style.backgroundColor = "black"
 
 var t = 0
 
 botao.addEventListener("click", function(){
     if (t == 0){
         botao.innerText = "Inscrito"
-        botao.style.backgroundColor = "green"
-        botao.style.filter = "drop-shadow( 0px 0px 5px green)"
+        botao.style.backgroundColor = "#068595"
+        botao.style.filter = "drop-shadow( 0px 0px 5px black)"
         t++
     }
     else{
         botao.innerText = "Inscreva-se"
-        botao.style.backgroundColor = "red"
-        botao.style.filter = "drop-shadow( 0px 0px 5px red)"
+        botao.style.backgroundColor = "black"
+        botao.style.filter = "drop-shadow( 0px 0px 5px #068595)"
         t--
     }
 });
