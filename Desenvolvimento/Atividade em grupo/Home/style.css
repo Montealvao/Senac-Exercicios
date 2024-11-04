@@ -170,12 +170,11 @@ section h1{
     font-size: 4rem;
     color: white;
     padding: 0.5rem 1rem;
-    
     margin-bottom: 2rem;
     width: 40%;
     text-align: center;
     margin: 0 auto;
-    background-color: rgb(61, 98, 122);
+    background-color: rgb(19, 17, 17);
 }
 
 
@@ -212,4 +211,73 @@ section h1{
 
 .content h3{
     font-size: 1.4rem;
+}
+
+@media(max-width: 1440px){
+    .H-left h1{
+        font-size: 3.5rem;
+    }
+
+    .mid{
+        margin-right: 14rem;
+        width: 75%;
+        height: 30rem;
+    }
+
+    .linhas{
+        margin-right: 15.3rem;
+        width: 77%;
+    }
+
+    .H-right{
+        margin-right: 10rem;
+        gap: 2rem;
+    }
+    
+    .H-right a{
+        font-size: 2.3rem;
+    }
+
+    section{
+        width: 80%;
+        margin-right: 13rem;
+        padding-top: 5rem;
+    }
+    
+    .activity{
+        width: 60rem;
+        height: 10rem;
+    }
+
+    .activity img{
+        max-width: 19rem;
+        height: 10rem;
+    }
+
+    .content{
+        width: 70%;
+    }
+
+    section h1{
+        font-size: 2.4rem;
+        top: -2rem;
+        right: 19rem;
+        padding: 0.7rem 2rem;
+    }
+}
+
+@media(max-width: 425px){
+    .H-left h1{
+        font-size: 1.7rem ;
+    }
+    
+    .H-right{
+        margin-left: 20rem;
+
+    }
+
+    .H-right a{
+        font-size: 1.5rem;
+    }
+
 }
