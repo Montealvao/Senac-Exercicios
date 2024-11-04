@@ -27,6 +27,16 @@ img{
     max-height: 15rem;
 }
 
+#zas{
+    position: absolute;
+    bottom: 0.3rem;
+    right: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+
 .H-left{
     display: flex;
     padding: 0.7rem;
