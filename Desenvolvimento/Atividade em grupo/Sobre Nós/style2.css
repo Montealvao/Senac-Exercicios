@@ -90,6 +90,7 @@ main{
     gap: 2rem;
     margin-top: 5rem;
     max-width: 50rem;
+    margin-bottom: 2rem;
     
 }
 
@@ -111,19 +112,25 @@ main{
 }
 
 
-@media (max-width:425px){ 
+@media (max-width:426px){ 
     html{
         font-size: 75%;
     }
 
     .H-left img{
-        height: 70%;
+        height: 65%;
+    }
+
+    .H-left h1{
+        font-size: 260%;
     }
 
     .Cards{
         width: 96%;
     }
-
+   #aboutus{
+    display: none;
+   }
     
 
     
