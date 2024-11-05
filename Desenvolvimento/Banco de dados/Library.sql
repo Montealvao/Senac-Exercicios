@@ -42,11 +42,11 @@ CREATE TABLE IF NOT EXISTS Loans(
 
 select * from authors;
 INSERT INTO Authors (AuthorID, Name, BirthYear, Country) VALUES
-('fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', 'J.K. Rowling', 1965, 'United Kingdom'),
+/*('fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', 'J.K. Rowling', 1965, 'United Kingdom'),
 ('8abec1b5-bb73-4e0d-be58-bb91d7a5da2c', 'George R.R. Martin', 1948, 'United States'),
 ('45c0fa42-23ef-48b9-bd1e-0fccfc65dd2b', 'J.R.R. Tolkien', 1892, 'United Kingdom'),
-('a315eafc-f937-43fd-8366-ea4156760cc2', 'Agatha Christie', 1890, 'United Kingdom');
-/*('d14f992b-465c-4361-a5e4-7558e93b19e5','Samuel Barros',2008);*/
+('a315eafc-f937-43fd-8366-ea4156760cc2', 'Agatha Christie', 1890, 'United Kingdom');*/
+('d14f992b-465c-4361-a5e4-7558e93b19e5','Samuel Barros',2008,'Brazil');
 
 select * from Genres;
 INSERT INTO Genres (GenreID, GenreName) VALUES
@@ -57,11 +57,12 @@ INSERT INTO Genres (GenreID, GenreName) VALUES
 
 select * from books;
 INSERT INTO Books (BookID, Title, AuthorID, GenreID, PublicationYear) VALUES
-('74a0ff62-63ab-449d-8446-5a34e4b62aaa', 'Harry Potter and the Sorcerer\s Stone', 'fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1997),
+/*('74a0ff62-63ab-449d-8446-5a34e4b62aaa', 'Harry Potter and the Sorcerer\s Stone', 'fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1997),
 ('9a3d1f0d-214e-4693-a516-1e0b498a1340', 'A Game of Thrones', '8abec1b5-bb73-4e0d-be58-bb91d7a5da2c', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1996),
 ('3910deb5-12f6-4333-a10b-0a51eac32d5b', 'The Hobbit', '45c0fa42-23ef-48b9-bd1e-0fccfc65dd2b', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1937),
 ('cb95bc0b-2626-424c-bbd7-c5a3f01fc486', 'Harry Potter and the Chamber of Secrets', 'fa9dfafb-3e4d-4d78-9e58-a4a0ccc86e41', '450f6503-feb9-4934-a6c4-32a4b0bb6e11', 1998),
-('8dbffd03-d2d6-4ecc-91a3-274314a50531', 'Murder on the Orient Express', 'a315eafc-f937-43fd-8366-ea4156760cc2', 'b3945aaf-d974-4a78-ba38-95adadb1ba49', 1934);
+('8dbffd03-d2d6-4ecc-91a3-274314a50531', 'Murder on the Orient Express', 'a315eafc-f937-43fd-8366-ea4156760cc2', 'b3945aaf-d974-4a78-ba38-95adadb1ba49', 1934);*/
+('5e989151-e83c-4046-973b-be20c30cc5fa','Hard Life','d14f992b-465c-4361-a5e4-7558e93b19e5','205dd251-cea4-4390-acd6-de00c5605b96',2024);
 
 select * from Members;
 INSERT INTO Members (MemberID, Name, JoinDate) VALUES
@@ -118,6 +119,11 @@ inner join loans
 on loans.MemberID = members.MemberId
 where loans.ReturnDate IS null;
 
+/*9*/
+select authors.Name
+from authors
+inner join books
+on books.AuthorID = authors.AuthorID join loans on loans.BookID = books.BookID;
 
 select books.title, loans.MemberID
 from books
@@ -125,3 +131,6 @@ inner join loans
 on loans.BookID = books.BookID;
 
 select count(loanID) as Livros_Emprestados from loans;
+
+
+
