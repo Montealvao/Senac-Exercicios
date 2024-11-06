@@ -30,10 +30,12 @@ img{
 #zas{
     position: absolute;
     bottom: 0.3rem;
-    right: 2.3rem;
+    right: 2.5rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
+    font-size: 20px;
+    color: black;
 }
 
 
@@ -132,6 +134,7 @@ img{
     font-size: 1rem;
     filter: drop-shadow( 0px 0px 5px #068595);
     cursor: pointer;
+    margin-bottom: 20px;
 }
  
 #timer{
