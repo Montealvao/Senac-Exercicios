@@ -7,7 +7,7 @@ function começo(local) {
             const horas = (24 - data.getHours())- 1;
             const minutos = 60 - data.getMinutes() - 1;
             const segundos = 60 - data.getSeconds() - 1;
-            local.textContent = dias + ":" + horas + ":" + minutos + ":" + segundos
+            local.textContent =   dias + "d " + horas + "h " + minutos + "m " + segundos + "s"
 
         },1000)
     // const salvante = localStorage.getItem('tempinQresta')
