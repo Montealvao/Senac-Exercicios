@@ -118,19 +118,20 @@ main{
     }
 
     .H-left img{
-        height: 65%;
+        height:80%;
     }
 
     .H-left h1{
-        font-size: 260%;
+        font-size: 110%;
+    }
+
+    .H-right a{
+        font-size: 120%;
     }
 
     .Cards{
         width: 96%;
     }
-   #aboutus{
-    display: none;
-   }
     
 
     

@@ -232,7 +232,7 @@ section h1{
     }
 
     .H-right{
-        margin-right: 4rem;
+        margin-right: 0;
         gap: 2rem;
     }
     
@@ -271,21 +271,23 @@ section h1{
 @media(max-width: 425px){
     
     .H-left h1{
-        font-size: 1.8rem;
-        margin: 0;
+        font-size: 100%;
+        
     }
 
+
     .H-left img{
-        width: 90%;
+        height: 50%;
     }
     
     .H-right{
-        margin-left: 8rem;
         gap: 1rem;
+        width: 10rem;
+        padding: 0;
     }
 
     .H-right a{
-        font-size: 1.5rem;
+        font-size: 90%;
     }
 
     .mid{
