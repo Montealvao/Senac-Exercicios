@@ -109,11 +109,14 @@ img{
     color: rgb(248, 244, 244);
     font-size: 1.5rem;
     width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.4rem;
 }
 
 #endereco{
     position: absolute;
     bottom: -5rem;
+    color: rgb(248, 244, 244);
 }
 
 .eventInfo{
