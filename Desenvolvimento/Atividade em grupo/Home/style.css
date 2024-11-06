@@ -42,7 +42,7 @@ img{
 }
 
 .H-left h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: rgb(61, 98, 122);
 }
 
@@ -190,8 +190,8 @@ section h1{
 .activity img{
     max-width: 22rem;
     height: 16rem;
-    border-top-right-radius: 1.2rem;
     border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
 }
 
 .content{
@@ -346,6 +346,8 @@ section h1{
     .activity img {
         width: 100%;
         height: auto; 
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1.2rem;
     }
 
     .content {

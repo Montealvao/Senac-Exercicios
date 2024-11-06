@@ -1,42 +1,50 @@
-function começo(duraçao, local) {
-    let timer = duraçao
-    const salvante = localStorage.getItem('tempinQresta')
-    if (salvante) {
-        timer = Math.max(0, salvante - Math.floor((Date.now() - parseInt(localStorage.getItem('ComeçoDtempin'), 10)) / 1000))
-    } else {
-        localStorage.setItem('ComeçoDtempin', Date.now())
-    }
+function começo(local) {
+    
+    setInterval(function(){
+            const data = new Date();
+        
+            const dias = 5 - data.getDay();
+            const horas = (24 - data.getHours())- 1;
+            const minutos = 60 - data.getMinutes() - 1;
+            const segundos = 60 - data.getSeconds() - 1;
+            local.textContent = dias + ":" + horas + ":" + minutos + ":" + segundos
 
-    setInterval(function () {
-        let dia = parseInt(timer / 86400, 10)
-        let horas = parseInt((timer % 86400) / 3600, 10)
-        let minutos = parseInt((timer % 3600) / 60, 10)
-        let segundos = parseInt(timer % 60, 10)
+        },1000)
+    // const salvante = localStorage.getItem('tempinQresta')
+    // if (salvante) {
+    //     timer = Math.max(0, salvante - Math.floor((Date.now() - parseInt(localStorage.getItem('ComeçoDtempin'), 10)) /  1000))
+    // } else {
+    //     localStorage.setItem('ComeçoDtempin', Date.now())
+    // }
 
-        minutos = minutos < 10 ? "0" + minutos : minutos
-        segundos = segundos < 10 ? "0" + segundos : segundos
-        horas = horas < 10 ? "0" + horas : horas
-        dia = dia < 10 ? "0" + dia : dia
+    // setInterval(function () {
+    //     let dia = parseInt(timer / 86400, 10)
+    //     let horas = parseInt((timer % 86400) / 3600, 10)
+    //     let minutos = parseInt((timer % 3600) / 60, 10)
+    //     let segundos = parseInt(timer % 60, 10)
 
-        local.textContent = dia + ":" + horas + ":" + minutos + ":" + segundos
+    //     minutos = minutos < 10 ? "0" + minutos : minutos
+    //     segundos = segundos < 10 ? "0" + segundos : segundos
+    //     horas = horas < 10 ? "0" + horas : horas
+    //     dia = dia < 10 ? "0" + dia : dia
 
-        if (timer > 0) {
-            timer--
-            localStorage.setItem('tempinQresta', timer)
-        } else {
-            timer = 0
-            localStorage.removeItem('tempinQresta')
-            localStorage.removeItem('ComeçoDtempin')
-        }
-    }, 1000);
+    //     local.textContent = dia + ":" + horas + ":" + minutos + ":" + segundos
+
+    //     if (timer > 0) {
+    //         timer--
+    //         localStorage.setItem('tempinQresta', timer)
+    //     } else {
+    //         timer = 0
+    //         localStorage.removeItem('tempinQresta')
+    //         localStorage.removeItem('ComeçoDtempin')
+    //     }
+    // }, 1000);
 }
 
-window.onload = function () {
-    const duraçao = 864000;
-    const local = document.querySelector('#timer')
 
-    começo(duraçao, local);
-}
+const local = document.querySelector('#timer')
+
+começo(local);
 
 const msg = document.getElementById("msg")
 const botao = document.getElementById("but")
