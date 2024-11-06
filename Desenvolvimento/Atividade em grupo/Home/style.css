@@ -115,6 +115,7 @@ img{
     gap: 3rem;
 }
 
+
 #but{
     position: absolute;
     bottom: 1rem;
@@ -297,7 +298,8 @@ section h1{
     }
 
     .mid p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+
     }
 
     .mid h1{
@@ -308,8 +310,12 @@ section h1{
         gap: 1.3rem;
     }
 
+    #endereco{
+        font-size: 0.7rem;
+    }
+
     #timer{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     #but{
